@@ -6,9 +6,9 @@ export default function MarketingLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div>
+    <div className="relative flex flex-col">
       <Navbar />
-      <main>{children}</main>
+      {children}
       {/* Footer */}
     </div>
   )
