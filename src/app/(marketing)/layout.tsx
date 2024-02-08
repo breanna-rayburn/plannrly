@@ -1,3 +1,5 @@
+import { Navbar } from './_components/navbar'
+
 export default function MarketingLayout({
   children,
 }: Readonly<{
@@ -5,8 +7,8 @@ export default function MarketingLayout({
 }>) {
   return (
     <div>
-      {/* Navbar */}
-      {children}
+      <Navbar />
+      <main>{children}</main>
       {/* Footer */}
     </div>
   )
